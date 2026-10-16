@@ -1,5 +1,4 @@
 
-// 1. Data Structures: Array of Objects (Now with images)
 let movies = [
     { 
         id: 'm1', 
