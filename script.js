@@ -18,6 +18,11 @@ let movies = [
         price: 180, 
         image: 'https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg' 
     }
+     ,{
+    id: 'm4',
+    name: 'Interstellar',
+    price: 200,
+        image: 'https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg'}
 ];
 
 

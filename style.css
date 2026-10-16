@@ -182,8 +182,3 @@ button {
     border-radius: 5px;
     margin-bottom: 10px;
 }
-.movie-cards:hover{
-    cursor:pointer;
-    transition: 0.4s;
-    scale:1.02;
-}
