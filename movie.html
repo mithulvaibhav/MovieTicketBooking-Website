@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>🎬 Movie Ticket Booking System</h1>
+        <p>Choose your favourite movie, select a showtime, book your tickets and enjoy the show!</p>
+    </header>
+
+    <div class="main-container">
+        
+        <section class="booking-section">
+            <h2>Available Movies</h2>
+            <div id="movie-cards" class="movie-cards">
+                
+            </div>
+
+            <div class="form-container">
+                <h2>🎟️ Book Your Tickets</h2>
+                <form id="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="movie-select">Select Movie</label>
+                            <select id="movie-select" required>
+                                <option value="" disabled selected>-- Choose Movie --</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="showtime-select">Select Show Time</label>
+                            <select id="showtime-select" required>
+                                <option value="" disabled selected>-- Choose Show Time --</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="1:30 PM">1:30 PM</option>
+                                <option value="6:00 PM">6:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tickets">Number of Tickets</label>
+                            <input type="number" id="tickets" min="1" placeholder="Enter number of tickets" required>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-book">🎫 Book Tickets</button>
+                        <button type="reset" class="btn-reset">🔄 Reset</button>
+                    </div>
+
+                    <div id="message-box" class="message-box hidden"></div>
+                    
+                    <div class="price-display">
+                        <span>💰 Total Price: ₹<span id="total-price">0</span></span>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Right Column: Bookings Management -->
+        <section class="management-section">
+            <h2>Your Bookings (<span id="booking-count">0</span>)</h2>
+            <input type="text" id="search-input" placeholder="🔍 Search by movie name..." class="search-bar">
+            
+            <div id="bookings-list" class="bookings-list">
+                <div class="empty-state">
+                    <p>🎟️</p>
+                    <h3>No bookings yet.</h3>
+                    <p>Book your favourite movies and see them here!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
