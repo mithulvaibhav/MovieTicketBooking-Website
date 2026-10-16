@@ -200,4 +200,4 @@ async function sendConfirmationEmail(booking) {
     }
 }
 
-init();
+init();     
