@@ -136,7 +136,7 @@ function updateBookingsUI(bookingsArray) {
     if (bookingsArray.length === 0) {
         bookingsList.innerHTML = `
             <div class="empty-state">
-                <p>🎟️</p>
+                
                 <h3>No bookings found.</h3>
             </div>`;
         return;
